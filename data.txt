@@ -1,0 +1,14 @@
+LangChain Overview
+LangChain is an open-source framework designed to simplify the development of applications powered by large language models (LLMs). It provides tools and abstractions to integrate LLMs with external data sources, memory, and workflows, enabling developers to create context-aware, intelligent applications such as chatbots, question-answering systems, and agents.
+Core Components
+1. Prompt Templates
+Prompt templates are reusable, parameterized strings that structure inputs to LLMs. They allow developers to craft consistent and dynamic prompts by inserting user inputs, context, or other variables. For example, a template might look like: "Answer the question: {user_question} based on the context: {context}." LangChain supports templating in multiple formats, such as Python's string formatting or Jinja2.
+2. LLMs and Chat Models
+LangChain provides interfaces to interact with LLMs (e.g., OpenAI, Hugging Face models) and chat models optimized for conversational tasks. It abstracts API calls, making it easy to switch between providers or models. Developers can configure model parameters like temperature or max tokens.
+3. Memory
+Memory modules enable LLMs to maintain context across interactions. LangChain supports various memory types:
+ConversationBufferMemory: Stores the entire conversation history.
+ConversationSummaryMemory: Summarizes past interactions to save token space.
+VectorStoreMemory: Uses vector embeddings to retrieve relevant past interactions. This is particularly useful for chatbots or applications requiring continuity.
+4. Document Loaders
+Document loaders allow LangChain to ingest data from various sources, such as text files, PDFs, web pages, or databases. The TextLoader, for instance, reads plain text files (like this one) into Document objects, which can be split into chunks for processing. Example usage:
