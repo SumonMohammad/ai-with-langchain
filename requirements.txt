@@ -7,6 +7,11 @@ langchain-groq>=0.1.4
 faiss-cpu>=1.8.0
 sentence-transformers>=3.0.1
 python-dotenv>=1.0.1
+langserve>=0.2.5
+langgraph>=0.4.5
+fastapi>=0.95.2
+uvicorn>=0.22.0
+sse_starlette>=3.0.2
 
 
 #pip install -r requirements.txt
